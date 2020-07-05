@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./counter.css";
 import { useCounter } from "../../hooks/useCounter";
 
@@ -21,7 +20,5 @@ const CounterWithCustomHook = (props) => {
     </>
   );
 };
-
-CounterWithCustomHook.propTypes = {};
 
 export default CounterWithCustomHook;

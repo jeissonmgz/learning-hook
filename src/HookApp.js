@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 const HookApp = (props) => {
   return (
@@ -8,7 +7,5 @@ const HookApp = (props) => {
     </>
   );
 };
-
-HookApp.propTypes = {};
 
 export default HookApp;

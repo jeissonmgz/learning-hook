@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import "./counter.css";
 
 const CounterApp = (props) => {
@@ -29,7 +28,5 @@ const CounterApp = (props) => {
     </>
   );
 };
-
-CounterApp.propTypes = {};
 
 export default CounterApp;
