@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul className="navbar-nav">
+          <li className="nav-item">
             <NavLink
               exact
               activeClassName="active"
@@ -16,7 +16,7 @@ export const Navbar = () => {
               Home
             </NavLink>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <NavLink
               activeClassName="active"
               className="nav-item nav-link"
@@ -25,7 +25,7 @@ export const Navbar = () => {
               About
             </NavLink>
           </li>
-          <li class="nav-item">
+          <li className="nav-item">
             <NavLink
               activeClassName="active"
               className="nav-item nav-link"
