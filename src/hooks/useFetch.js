@@ -6,12 +6,15 @@ export const useFetch = (url) => {
     loading: true,
     error: null,
   });
+
   const isMounted = useRef(true);
+
   useEffect(() => {
     return () => {
       isMounted.current = false;
     };
   }, []);
+
   useEffect(() => {
     setstate({
       data: null,
@@ -26,7 +29,11 @@ export const useFetch = (url) => {
         } else {
           console.log("It wasn´t called");
         }
+      })
+      .catch(() => {
+        setstate({ data: null, loading: false, error: "No cargo la info" });
       });
   }, [url]);
+
   return state;
 };
